@@ -49,4 +49,13 @@ public class FizzBuzzTest {
         //Assert
         assertEquals("Buzz", actual);
     }
+
+    @Test
+    public void calculate_WhenPassedFifteenThenReturnFizzBuzz(){
+        //Act
+        String actual = fizzBuzz.calculate(15);
+
+        //Assert
+        assertEquals("FizzBuzz", actual);
+    }
 }
