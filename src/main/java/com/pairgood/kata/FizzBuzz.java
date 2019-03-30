@@ -4,18 +4,18 @@ public class FizzBuzz{
 
     public String calculate(Integer value) {
 
-        String out = value.toString();
+        String out = "";
 
         if(value % 3 == 0){
-            out = "Fizz";
+            out += "Fizz";
         }
 
         if(value % 5 == 0){
-            out = "Buzz";
+            out += "Buzz";
         }
 
-        if((value % 3 == 0) && (value % 5 == 0)){
-            out = "FizzBuzz";
+        if(out.isEmpty()){
+            out = value.toString();
         }
 
         return out;
