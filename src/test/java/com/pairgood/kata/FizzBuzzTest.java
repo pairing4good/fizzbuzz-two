@@ -22,4 +22,13 @@ public class FizzBuzzTest {
         //Assert
         assertEquals("1", actual);
     }
+
+    @Test
+    public void calculate_WhenPassedTwoThenReturnTwo(){
+        //Act
+        String actual = fizzBuzz.calculate(2);
+
+        //Assert
+        assertEquals("2", actual);
+    }
 }
