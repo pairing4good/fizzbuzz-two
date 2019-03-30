@@ -4,21 +4,20 @@ public class FizzBuzz{
 
     public String calculate(Integer value) {
 
-
-        if((value % 3 == 0) &&
-                (value % 5 == 0)){
-            return "FizzBuzz";
-        }
+        String out = value.toString();
 
         if(value % 3 == 0){
-            return "Fizz";
+            out = "Fizz";
         }
 
         if(value % 5 == 0){
-            return "Buzz";
+            out = "Buzz";
         }
 
+        if((value % 3 == 0) && (value % 5 == 0)){
+            out = "FizzBuzz";
+        }
 
-        return value.toString();
+        return out;
     }
 }
