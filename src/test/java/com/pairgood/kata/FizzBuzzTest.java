@@ -31,4 +31,13 @@ public class FizzBuzzTest {
         //Assert
         assertEquals("2", actual);
     }
+
+    @Test
+    public void calculate_WhenPassedThreeThenReturnFizz(){
+        //Act
+        String actual = fizzBuzz.calculate(3);
+
+        //Assert
+        assertEquals("Fizz", actual);
+    }
 }
