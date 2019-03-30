@@ -11,7 +11,10 @@ public class FizzBuzzTest {
 
     @Before
     public void setUp(){
-        fizzBuzz = new FizzBuzz();
+        BuzzCalculator buzzCalculator = new BuzzCalculator();
+        FizzCalculator fizzCalculator = new FizzCalculator();
+
+        fizzBuzz = new FizzBuzz(buzzCalculator, fizzCalculator);
     }
 
     @Test
